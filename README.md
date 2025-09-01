@@ -1,13 +1,6 @@
 # Sarmistha DC Portfolio Website
 
-This is a personal portfolio website for **Sarmistha DC**, a CSIT student and full-stack developer. The website showcases skills, services, portfolio projects, and provides a contact form for potential employers or collaborators.  
-
----
-
-## 🔗 Live Demo
-
-*(If hosted online, you can add your URL here)*  
-Example: [https://your-portfolio-link.com](https://your-portfolio-link.com)
+This is a personal portfolio website of me Sarmistha Dc, a CSIT student and full-stack developer. The website showcases skills, services, portfolio projects, and provides a contact form for potential employers or collaborators.  
 
 ---
 
@@ -20,7 +13,7 @@ Example: [https://your-portfolio-link.com](https://your-portfolio-link.com)
 - **Services Section:** Highlights offered services in web development.
 - **Skills Section:** Categorized display of frontend, backend, and other technical skills.
 - **Contact Form:** Simple form validation with user feedback.
-- **Footer:** Includes social media links to LinkedIn, GitHub, and Twitter.
+- **Footer:** Includes social media links to LinkedIn, GitHub
 
 ---
 
@@ -39,10 +32,9 @@ Example: [https://your-portfolio-link.com](https://your-portfolio-link.com)
 portfolio/
 │
 ├── index.html # Main HTML file
-├── style.css # CSS file (if separated from inline CSS)
-├── script.js # JavaScript file (if separated from inline JS)
-├── assets/
-│ └── images/ # Profile picture and project images
+├── style.css # CSS file
+├── script.js # JavaScript file 
+
 └── README.md # This file
 
 yaml
@@ -61,33 +53,13 @@ Copy code
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/dcsarmistha/portfolio.git
-Open index.html in your web browser to view the website.
-
-Customize content (projects, skills, contact info) as needed.
+git clone https://github.com/dcsarmistha/portfoliodcsarmistha.git
 
 📄 License
 This project is open-source and free to use.
 
 Made with ❤️ by Sarmistha DC
 
-yaml
-Copy code
-
----
-
-If you want, I can also **update it to mention your separated HTML, CSS, JS files explicitly** and make it **more GitHub-ready with badges**. That makes your repo look ultra-professional. Do you want me to do that?
 
 
 
-
-
-
-
-Ask ChatGPT
-
-
-
-
-
-ChatGPT can make mistakes.
