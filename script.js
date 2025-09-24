@@ -1,42 +1,36 @@
-// Dark/Light Mode Toggle
-const themeToggle = document.getElementById('theme-toggle');
-const themeIcon = themeToggle.querySelector('i');
+// Mobile menu toggle
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const navLinks = document.querySelector('.nav-links');
 
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    
-    if (document.body.classList.contains('dark-mode')) {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-        localStorage.setItem('theme', 'dark');
+mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    mobileMenuBtn.querySelector('i').classList.toggle('fa-bars');
+    mobileMenuBtn.querySelector('i').classList.toggle('fa-times');
+});
+
+// Header scroll effect
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
     } else {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-        localStorage.setItem('theme', 'light');
+        header.classList.remove('scrolled');
     }
 });
 
-// Check for saved theme preference
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-mode');
-    themeIcon.classList.remove('fa-moon');
-    themeIcon.classList.add('fa-sun');
-}
-
-// Simple form validation
+// Contact form with EmailJS
 const contactForm = document.getElementById('contact-form');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    if (name && email && message) {
-        alert('Thank you for your message! I will get back to you soon.');
+
+    emailjs.sendForm('service_kkol0da', 'template_kdr9y2x', this)
+      .then(() => {
+        alert('Message sent successfully!');
         contactForm.reset();
-    }
+      }, (error) => {
+        alert('Failed to send message. Please try again.\nError: ' + JSON.stringify(error));
+      });
 });
 
 // Smooth scrolling for navigation links
@@ -49,10 +43,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
+            // Close mobile menu if open
+            navLinks.classList.remove('active');
+            mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+            
             window.scrollTo({
                 top: targetElement.offsetTop - 80,
                 behavior: 'smooth'
             });
         }
     });
+});
+
+// Animation on scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-up');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in-up').forEach(el => {
+    observer.observe(el);
 });
