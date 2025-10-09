@@ -7,16 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "47syqbYxsI6tKpiOh",
-      });
-   })();
-</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({ publicKey: "47syqbYxsI6tKpiOh" });
+        })();
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -42,15 +38,18 @@
         <div class="container">
             <div class="hero-content fade-in-up">
                 <h1>Sarmistha DC</h1>
-                <p class="tagline">Passionate CSIT Student | Full-Stack Developer</p>
-                <p>CSIT student specializing in full-stack development, focused on turning ideas into reliable, user-friendly applications.</p>
+                <p class="tagline">Full-Stack Developer & CSIT Student</p>
+                <p>Specializing in building reliable, user-friendly web applications with modern technologies and best practices.</p>
                 <div class="cta">
                     <a href="#portfolio" class="btn">View Portfolio</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
+          
             </div>
             <div class="hero-image fade-in-up">
-                <img src="https://i.postimg.cc/fbxGbsZr/1000310507.jpg" alt="Sarmistha DC">
+                <div class="image-frame">
+                    <img src="https://i.postimg.cc/fbxGbsZr/1000310507.jpg" alt="Sarmistha DC">
+                </div>
             </div>
         </div>
     </section>
@@ -61,8 +60,7 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text fade-in-up">
-                    <p>Hello! I’m Sarmistha DC, a CSIT student with a strong interest in full-stack web development. I focus on creating responsive, user-friendly applications and am ready to contribute my skills to meaningful projects while advancing my expertise in the field.</p>
-                    
+                    <p>Hello! I'm Sarmistha DC, a CSIT student passionate about full-stack development. I focus on building responsive, intuitive, and practical web applications using modern technologies.</p>
                     <div class="education fade-in-up">
                         <h3>Education</h3>
                         <p><strong>Bachelor's in Computer Science and Information Technology</strong></p>
@@ -76,100 +74,33 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>My Skills</h2>
+            <h2>Technical Skills</h2>
             <div class="skills-container">
                 <div class="skill-category fade-in-up">
-                    <h3>Frontend Development</h3>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">HTML/CSS</span>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Semantic HTML</span>
-                            <span class="skill-tag">Flexbox/Grid</span>
-                            <span class="skill-tag">Responsive Design</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">JavaScript</span>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">ES6+</span>
-                            <span class="skill-tag">DOM Manipulation</span>
-                            <span class="skill-tag">Async/Await</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">React</span>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Components</span>
-                            <span class="skill-tag">Hooks</span>
-                            <span class="skill-tag">State Management</span>
-                        </div>
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
                     </div>
                 </div>
-                
                 <div class="skill-category fade-in-up">
-                    <h3>Backend Development</h3>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Node.js</span>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">RESTful APIs</span>
-                            <span class="skill-tag">Express.js</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">ASP.NET</span>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">C#</span>
-                            <span class="skill-tag">Web API</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Databases</span>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">MySQL</span>
-                        </div>
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">MySQL</span>
                     </div>
                 </div>
-                
                 <div class="skill-category fade-in-up">
-                    <h3>Other Technologies</h3>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Advanced Java</span>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">OOP</span>
-                            <span class="skill-tag">Multithreading</span>
-                            <span class="skill-tag">Java FX</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Version Control</span>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">GitHub</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Development Tools</span>
-                        </div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">VS Code</span>
-                        </div>
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Java</span>
                     </div>
                 </div>
             </div>
@@ -182,27 +113,19 @@
             <h2>My Services</h2>
             <div class="services-container">
                 <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3>Full-Stack Development</h3>
-                    <p>I build scalable, efficient, and user-friendly full-stack applications with modern technologies.</p>
+                    <p>Building scalable, user-friendly web applications using modern technologies.</p>
                 </div>
-                
                 <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Responsive Web Design</h3>
-                    <p>Creating websites that work seamlessly across all devices and screen sizes.</p>
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Designing websites that work seamlessly across devices and screen sizes.</p>
                 </div>
-                
                 <div class="service-card fade-in-up">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
                     <h3>Backend Development</h3>
-                    <p>Building robust server-side applications with Node.js, Express, and ASP.NET.</p>
+                    <p>Developing robust server-side applications with Node.js and ASP.NET.</p>
                 </div>
             </div>
         </div>
@@ -211,35 +134,17 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>My Portfolio</h2>
+            <h2>My Projects</h2>
             <div class="portfolio-container">
                 <div class="portfolio-card fade-in-up">
-                    <div class="portfolio-image">
-                        <p>Project Coming Soon</p>
-                    </div>
+                 
                     <div class="portfolio-content">
-                        <h3>E-Commerce Website</h3>
-                        <p>A full-stack e-commerce platform with product filtering, cart functionality, and payment integration.</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-card fade-in-up">
-                    <div class="portfolio-image">
-                        <p>Project Coming Soon</p>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Task Management App</h3>
-                        <p>A responsive task management application with drag-and-drop functionality and real-time updates.</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-card fade-in-up">
-                    <div class="portfolio-image">
-                        <p>Project Coming Soon</p>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Weather Dashboard</h3>
-                        <p>An interactive weather application with location detection and 5-day forecast using weather API.</p>
+                        <h3>Hostel Hunt Nepal</h3>
+                        <p>A comprehensive hostel recommendation system for students in Nepal, featuring personalized suggestions using content-based and collaborative filtering techniques.</p>
+                        <div class="project-links">
+                            <a href="https://hostel-hunt-nepal.onrender.com/" target="_blank" class="btn">Live Demo</a>
+                            <a href="https://github.com/dcsarmistha/Hostel-hunt-nepal" target="_blank" class="btn btn-outline">GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -253,78 +158,51 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <div class="contact-item fade-in-up">
-                        <div class="contact-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <h3>Name</h3>
-                            <p>Sarmistha DC</p>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-user"></i></div>
+                        <div><h3>Name</h3><p>Sarmistha DC</p></div>
                     </div>
-                    
                     <div class="contact-item fade-in-up">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h3>Email</h3>
-                            <p>sarmisthadc2@gmail.com</p>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div><h3>Email</h3><p>sarmisthadc2@gmail.com</p></div>
                     </div>
-                    
                     <div class="contact-item fade-in-up">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>9809776188</p>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div><h3>Phone</h3><p>9809776188</p></div>
                     </div>
-                    
                     <div class="contact-item fade-in-up">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Kathmandu, Nepal</p>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div><h3>Location</h3><p>Kathmandu, Nepal</p></div>
                     </div>
                 </div>
-                
-               <form class="contact-form fade-in-up" id="contact-form">
-  <div class="form-group">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="from_name" class="form-control" required>
-  </div>
-
-  <div class="form-group">
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="from_email" class="form-control" required>
-  </div>
-
-  <div class="form-group">
-    <label for="message">Your Message</label>
-    <textarea id="message" name="message" class="form-control" required></textarea>
-  </div>
-
-  <button type="submit" class="btn">Send Message</button>
-</form>
-
+                <form class="contact-form fade-in-up" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="from_name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="from_email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/sarmistha-dc/" class="social-link" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
+             
                 <a href="https://github.com/dcsarmistha" class="social-link" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
+           
             <p>&copy; 2025 Sarmistha DC. All Rights Reserved.</p>
         </div>
     </footer>

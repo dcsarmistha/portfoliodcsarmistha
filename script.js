@@ -73,3 +73,16 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in-up').forEach(el => {
     observer.observe(el);
 });
+
+// Add skill tag hover effects
+document.querySelectorAll('.skill-tag').forEach(tag => {
+    tag.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-3px)';
+        this.style.boxShadow = '0 6px 15px rgba(106, 136, 247, 0.4)';
+    });
+    
+    tag.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = '0 4px 10px rgba(106, 136, 247, 0.3)';
+    });
+});
