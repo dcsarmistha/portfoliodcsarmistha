@@ -1,65 +1,32 @@
-# Sarmistha DC Portfolio Website
+🌐 Sarmistha DC — Portfolio Website
 
-This is a personal portfolio website of me Sarmistha Dc, a CSIT student and full-stack developer. The website showcases skills, services, portfolio projects, and provides a contact form for potential employers or collaborators.  
+A personal portfolio website built to showcase my skills, projects, and experience as a Full-Stack Developer & CSIT student.
 
----
+🚀 Features
 
-## 💻 Features
+Responsive design for all screen sizes
 
-- **Responsive Design:** Works seamlessly on desktop, tablet, and mobile devices.
-- **Dark/Light Mode:** Toggle between dark and light themes with smooth transition.
-- **Smooth Navigation:** Smooth scrolling for all internal links.
-- **Portfolio Section:** Displays projects with descriptions.
-- **Services Section:** Highlights offered services in web development.
-- **Skills Section:** Categorized display of frontend, backend, and other technical skills.
-- **Contact Form:** Simple form validation with user feedback.
-- **Footer:** Includes social media links to LinkedIn, GitHub
+Smooth navigation and animations
 
----
+Contact form powered by EmailJS
 
-## 🛠 Technologies Used
+Sections for About, Skills, Services, Projects, and Contact
 
-- **HTML5 & CSS3** for markup and styling
-- **JavaScript** for interactivity and theme toggle
-- **Font Awesome** for icons
-- **Google Fonts (Poppins)** for typography
-- **Responsive Design** with CSS Grid and Flexbox
+🛠️ Tech Stack
 
----
+HTML5
 
-## 📂 File Structure
+CSS3
 
-portfolio/
-│
-├── index.html # Main HTML file
-├── style.css # CSS file
-├── script.js # JavaScript file 
+JavaScript
 
-└── README.md # This file
+EmailJS
 
-yaml
-Copy code
+📬 Contact
 
----
+If you’d like to connect or collaborate:
+📧 sarmisthadc2@gmail.com
 
-## 🔗 Social Links
+🌸 Live Demo
 
-- [LinkedIn](https://www.linkedin.com/in/sarmistha-dc/)  
-- [GitHub](https://github.com/dcsarmistha)
-
----
-
-## ⚡ Usage
-
-1. Clone the repository:
-```bash
-git clone https://github.com/dcsarmistha/portfoliodcsarmistha.git
-
-📄 License
-This project is open-source and free to use.
-
-Made with ❤️ by Sarmistha DC
-
-
-
-
+🔗https://dcsarmistha.github.io/portfoliodcsarmistha/ 

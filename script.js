@@ -1,4 +1,4 @@
-// Mobile menu toggle
+
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
@@ -8,7 +8,7 @@ mobileMenuBtn.addEventListener('click', () => {
     mobileMenuBtn.querySelector('i').classList.toggle('fa-times');
 });
 
-// Header scroll effect
+
 window.addEventListener('scroll', () => {
     const header = document.getElementById('header');
     if (window.scrollY > 50) {
@@ -18,7 +18,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Contact form with EmailJS
+
 const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', function(e) {
@@ -33,7 +33,7 @@ contactForm.addEventListener('submit', function(e) {
       });
 });
 
-// Smooth scrolling for navigation links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -56,7 +56,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Animation on scroll
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -74,7 +74,7 @@ document.querySelectorAll('.fade-in-up').forEach(el => {
     observer.observe(el);
 });
 
-// Add skill tag hover effects
+
 document.querySelectorAll('.skill-tag').forEach(tag => {
     tag.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-3px)';
